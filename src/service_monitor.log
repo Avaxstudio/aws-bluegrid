@@ -1,0 +1,30 @@
+2025-07-03 14:11:13 Status changed: UNKNOWN -> UP
+2025-07-03 14:12:15 Status changed: UNKNOWN -> DOWN
+2025-07-03 14:12:26 Status changed: UNKNOWN -> UP
+[2025-07-03 14:15:42] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 14:15:42] 🟢 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 14:15:42] 📦 Odgovor tela: {"id":17,"content":"Hello, World!"}
+[2025-07-03 14:17:49] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 14:17:49] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 14:17:49] 📦 Odgovor tela: {"id":27,"content":"Hello, World!"}
+[2025-07-03 14:29:50] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 14:29:50] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 14:29:50] 📦 Odgovor tela: {"id":29,"content":"Hello, World!"}
+[2025-07-03 14:30:58] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 14:30:58] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 14:30:58] 📦 Odgovor tela: {"id":35,"content":"Hello, World!"}
+[2025-07-03 15:08:58] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 15:08:58] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 15:08:58] 📦 Odgovor tela: {"id":2,"content":"Hello, World!"}
+[2025-07-03 15:47:08] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 15:57:39] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 16:03:16] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 16:04:17] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 16:04:17] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 16:04:17] 📦 Odgovor tela: {"id":1,"content":"Hello, World!"}
+[2025-07-03 16:04:43] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 16:04:43] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 16:04:43] 📦 Odgovor tela: {"id":3,"content":"Hello, World!"}
+[2025-07-03 16:30:06] Početak monitoringa: https://gs-rest-service-qb95.onrender.com/greeting
+[2025-07-03 16:30:06] 🔁 Status promenjen: UNKNOWN ➝ UP (HTTP 200)
+[2025-07-03 16:30:06] 📦 Odgovor tela: {"id":2,"content":"Hello, World!"}
