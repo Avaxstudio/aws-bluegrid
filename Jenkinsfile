@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  tools {
+    maven 'Maven3'
+  }
+
   environment {
     SLACK_WEBHOOK = credentials('gs-rest-slack-hook')
   }
