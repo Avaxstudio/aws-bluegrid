@@ -61,11 +61,14 @@ pipeline {
     }
   }
 
-  post {
-    always {
+post {
+  always {
+    node {
       sh "pkill -f 'java -jar' || true"
     }
-    success {
+  }
+  success {
+    node {
       sh 'bash monitor.sh &'
       sh """
       curl -X POST -H 'Content-type: application/json' \
@@ -73,7 +76,9 @@ pipeline {
       "${SLACK_WEBHOOK}"
       """
     }
-    failure {
+  }
+  failure {
+    node {
       sh """
       curl -X POST -H 'Content-type: application/json' \
       --data '{\"text\": \":x: Build FAILED for *${env.JOB_NAME}* (#${env.BUILD_NUMBER})\"}' \
