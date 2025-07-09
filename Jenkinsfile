@@ -20,28 +20,22 @@ pipeline {
 
   post {
     always {
-      node('master') {
-        sh "pkill -f 'java -jar' || true"
-      }
+      sh "pkill -f 'java -jar' || true"
     }
     success {
-      node('master') {
-        sh 'bash monitor.sh &'
-        sh """
-        curl -X POST -H 'Content-type: application/json' \
-        --data '{\"text\": \":white_check_mark: Build succeeded for *${env.JOB_NAME}* (#${env.BUILD_NUMBER})\"}' \
-        "${env.SLACK_WEBHOOK}"
-        """
-      }
+      sh 'bash monitor.sh &'
+      sh """
+      curl -X POST -H 'Content-type: application/json' \
+      --data '{\"text\": \":white_check_mark: Build succeeded for *${env.JOB_NAME}* (#${env.BUILD_NUMBER})\"}' \
+      "${env.SLACK_WEBHOOK}"
+      """
     }
     failure {
-      node('master') {
-        sh """
-        curl -X POST -H 'Content-type: application/json' \
-        --data '{\"text\": \":x: Build FAILED for *${env.JOB_NAME}* (#${env.BUILD_NUMBER})\"}' \
-        "${env.SLACK_WEBHOOK}"
-        """
-      }
+      sh """
+      curl -X POST -H 'Content-type: application/json' \
+      --data '{\"text\": \":x: Build FAILED for *${env.JOB_NAME}* (#${env.BUILD_NUMBER})\"}' \
+      "${env.SLACK_WEBHOOK}"
+      """
     }
   }
 }
